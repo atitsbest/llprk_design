@@ -1,3 +1,10 @@
+// @bg: #e74c3c;
+// @color: #fff;
+@color: #5a5350;
+@bg: #fff;
+// @header-bg: #d94839;
+@header-bg: #fff;
+
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @font-face {
     font-family: 'codropsicons';
@@ -11,6 +18,11 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+h1, h2, h3 {
+    font-weight: 300;
+}
+
 body, html {
     font-size: 100%;
     padding: 0;
@@ -25,8 +37,8 @@ body, html {
 }
 body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
-    color: #fff;
-    background: #e74c3c;
+    color: @color;
+    background: @bg;
 }
 a, button {
     outline: none;
@@ -45,7 +57,7 @@ a:hover,a:active {
 .container {
     & > header {
         text-align: center;
-        background: #d94839;
+        background: @header-bg;
         padding: 3em;
         h1 {
             font-size: 2.625em;

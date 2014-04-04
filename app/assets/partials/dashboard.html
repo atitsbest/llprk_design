@@ -1,7 +1,17 @@
-<div class="column">
-    <p>Anmelden</p>
-</div>
-<div class="column">
-    <h3>Tester</h3>
-</div>
+<table cellspacing="0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Preis</th>
+            <th>Verfügbar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng:repeat="product in products">
+            <td>{{product.name}}</td>
+            <td>{{product.price | currency}}</td>
+            <td>{{product.available}}</td>
+        </tr>
+    </tbody>
+</table>
 
