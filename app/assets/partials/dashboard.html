@@ -1,17 +1,27 @@
-<table cellspacing="0">
+<div class="row">
+    <h4>Quick look</h4>
+</div>
+<div class="row">
+    <h4>Your orders at a glance:</h4>
+</div>
+<table class="table">
     <thead>
         <tr>
+            <th></th>
             <th>Name</th>
             <th>Preis</th>
             <th>Verfügbar</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
-        <tr ng:repeat="product in products">
-            <td>{{product.name}}</td>
-            <td>{{product.price | currency}}</td>
-            <td>{{product.available}}</td>
-        </tr>
+    <tr ng:repeat="product in products">
+        <td><img ng:src="/pictures/{{product.image}}" style="width:100px;"/></td>
+        <td>{{product.name}}</td>
+        <td>{{product.price | currency}}</td>
+        <td>{{product.available}}</td>
+        <td><span class="glyphicon glyphicon-lieft"> </span></td>
+    </tr>
     </tbody>
 </table>
 

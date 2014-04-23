@@ -1,0 +1,26 @@
+@import url("colors.less");
+
+.sidebar {
+    padding-left: 0;
+    padding-right: 0;
+
+    background: @sidebar-bg;
+
+    > ul.nav {
+        > li {
+            padding: 8px;
+            border-bottom: 1px solid @border-color;
+            > a {
+                text-transform: uppercase;
+                color: @color;
+
+                > span {
+                    padding-left: 5px;
+                    padding-right: 40px;
+                    font-size: 1.4em;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

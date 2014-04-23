@@ -1,11 +1,13 @@
-<div style="text-align: center;">
-    <form action="/#/dashboard" method="get" class="nl-form" accept-charset="utf-8">
-        Ich heiße <input type="text" name="name" value="" id="name" style="width:7em;">
-        <br/>
-        mein Passwort lautet <input type="password" name="password" value="" id="password" style="width:7em;">
-
-        <div class="nl-submit-wrap">
-            <button type="submit" class="nl-submit">Anmelden →</button>
-        </div>
-    </form>
+<div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+        <form role="form" class="well" ng:submit="login()">
+            <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-default">Anmelden</button>
+        </form>
+    </div>
 </div>

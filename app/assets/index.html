@@ -3,25 +3,37 @@
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <title>llprk2 [Prototype]</title>
-
+<link rel="stylesheet" href="/css/vendor.css" type="text/css" media="screen" charset="utf-8">
 <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen" charset="utf-8">
 </head>
 <body>
 <div class="container">
-    <nav class="st-menu st-effect-2" id="menu-2">
-        <h2 class="icon icon-stack">Sidebar</h2>
-        <ul>
-            <li><a class="icon icon-wallet" href="#">Übersicht</a></li>
-            <li><a class="icon icon-data" href="#">Produkte</a></li>
-            <li><a class="icon icon-location" href="#">Bestellungen</a></li>
-            <li><a class="icon icon-study" href="#">Versandkosten</a></li>
-            <li><a class="icon icon-photo" href="#">Mail</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>{{title}} <span>Subtext</span></h1>
-    </header>
-    <div class="main clearfix" ng:view>
+    <div class="row">
+        <img src="bg.png" style="position:absolute;opacity:0.2;z-index:10000;" />
+        <!-- Top Navigation -->
+        <header>
+            <h2>{{title}}</h2>
+        </header>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-3 sidebar">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span>Übersicht</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-barcode"></span>Produkte</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Bestellungen</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-cog"></span>Einstellungen</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-9 main">
+            <div class="clearfix" ng:view></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <footer>
+            <span>&copy; Copyright 2014. All Rights Reserved. | lillypark.com</span>
+        </footer>
     </div>
 </div>
 
